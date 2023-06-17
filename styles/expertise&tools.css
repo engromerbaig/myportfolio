@@ -1,0 +1,102 @@
+/* Expertise Section */
+
+#expertise {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  color: white;
+  padding: 20px;
+}
+
+
+.expertise-text,
+.expertise-gif {
+  flex: 1;
+}
+
+#expertise h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top:0;
+  padding: 0;
+}
+
+.expertise-text {
+  margin-left: 70px;
+}
+
+.expertise-text h2 {
+  margin-left:0;
+}
+
+/* Tools Section */
+
+#tools {
+  background-color: rgb(105, 102, 102);
+  color: white;
+  padding: 20px;
+}
+
+#tools h2{
+  text-align: center;
+  margin:10px;
+  font-size: 2rem;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 120px;
+  padding-bottom: 40px;
+}
+
+.image-row img {
+  width: 5%;
+  margin: 5px;
+  background: transparent;
+  object-fit: cover;
+}
+
+/* tooltip */
+
+/* mobile screens */
+
+@media screen and (max-width: 800px) {
+  #expertise h2 {
+    font-size: 2rem;
+  }
+
+
+  .expertise-gif {
+    display: none;
+  }
+
+  .image-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 120px;
+    padding-bottom: 40px;
+  }
+
+  .image-row img {
+    width: 18%;
+    transition: none;
+    transform: none;
+    margin: 10px;
+    background: transparent;
+    object-fit: cover;
+  }
+
+  .image-row img:hover {
+    width: none;
+    transition: none;
+    transform: none;
+  }
+}
+

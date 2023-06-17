@@ -1,0 +1,106 @@
+/* Navigation */
+nav {
+  background-color: rgb(12, 12, 12);
+  color: white;
+  display: flex;
+  justify-content: flex-end; /* Justify the content to the right for large screens */
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end; /* Justify the content to the right for large screens */
+  align-items: center;
+  width: 60%;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  font-weight: bold;
+  color: white;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;    /* Hide the hamburger menu by default on larger screens */
+  cursor: pointer;
+  border:2px solid white;
+  padding: 8px 2px;
+  border-radius: 4px;
+}
+
+.hamburger-icon {
+
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  position: relative;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+.hamburger-icon::before {
+  top: -8px;
+}
+
+.hamburger-icon::after {
+  bottom: -8px;
+}
+
+.sub-menu{
+  display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide the navigation links on smaller screens */
+  }
+  
+  nav {
+    justify-content: flex-end; /* Justify the content to the right for small screens */
+  }
+  
+  .hamburger {
+    display: block; /* Show the hamburger menu on smaller screens */
+  }
+  
+  .sub-menu {
+    display: none; /* Hide the sub-menu on smaller screens */
+  }
+  
+  .sub-menu.show {
+    display: block;
+    position: absolute;
+    top: 8%; /* Adjust the positioning based on your layout */
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: #464040; /* Dark color for the sub-menu */
+    padding: 10px;
+    text-align: center; /* Center align the sub-menu items */
+    z-index: 9999;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sub-menu li {
+    margin: 5px 0;
+  }
+}
+

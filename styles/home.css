@@ -1,0 +1,188 @@
+/* Home Section */
+#home {
+  background-image: url('../backgrounds/home.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  
+  
+}
+
+.hello-line{
+  display: flex;
+  position: relative;
+}
+
+.bitmoji {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  bottom: 100%; /* change from -90% */
+  left: 50%; /* changed from right: 0% */
+  transform: translateX(-50%); /* changed from translate(-50%, -50%) */
+  transition: transform 0.3s ease-out;
+}
+
+.bitmoji:hover {
+  transform: translate(-50%, -10%);
+}
+
+#welcome{
+  transition: transform 0.2s ease-out;
+}
+
+#welcome:hover{
+  transform: scale(1.1);
+}
+
+
+
+#home h1 {
+  color:white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#home p {
+  color:white;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease-out;
+}
+
+#home p:hover {
+  transform: scale(1.1);
+}
+
+/* whatsapp */
+
+
+/* get in touch section */
+
+.get-in-touch{
+  display: flex;
+}
+
+.whatsapp-button,.email-button,.download-button{
+  margin:10px 20px;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+}
+
+.whatsapp-button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Email Button */
+.email-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EA4335;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+  background-color: #CC372B;
+}
+
+.email-button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+
+.download-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #646464;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #949494;
+}
+
+.download-button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+
+
+
+
+/* for small screens */
+@media screen and (max-width: 768px) {
+.bitmoji{
+  display: none;
+}
+
+#home{
+  padding:40px 48px;
+}
+
+
+#home h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.2rem;
+  transition: transform 0.2s ease-out;
+}
+
+.btn-txt{
+  display: none;
+}
+
+.get-in-touch{
+  margin-top: 10px;
+}
+
+.whatsapp-button, .email-button, .download-button{
+  padding: 10px 8px;
+  margin:10px 8px;
+}
+
+.whatsapp-button img, .email-button img, .download-button img {
+  margin-right: 0;
+
+}
+
+
+}
+

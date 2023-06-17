@@ -1,0 +1,81 @@
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    background-color: #121212;
+    color: white;
+    justify-content: center;
+
+  }
+
+  .aboutme-description h2,
+  .aboutme-education h2,
+  .aboutme-certifcate h2 {
+    margin-left:0;
+  }
+  
+  .aboutme-description,
+  .aboutme-education,
+  .aboutme-certifcate {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .aboutme-description p,
+  .aboutme-education p,
+  .aboutme-certifcate p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  #about h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+  
+  #about h4 {
+    font-size: 16px;
+  }
+
+  
+/* for mobiles */
+/* for small screens */
+@media screen and (max-width: 768px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #121212;
+    color: white;
+    justify-content: center;
+
+  }
+
+  
+  
+  .aboutme-description,
+  .aboutme-education,
+  .aboutme-certifcate {
+  
+    text-align: center;
+  }
+  
+  .aboutme-description p,
+  .aboutme-education p,
+  .aboutme-certifcate p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  #about h2 {
+    font-size: 2rem;
+    margin: 10px;
+   
+  }
+  
+  #about h4 {
+    font-size: 16px;
+  }
+  
+  }
+  
